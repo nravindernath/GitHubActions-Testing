@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello World
-        run: echo "Hello World!"
+        run: |
+          echo "Hello World!"
+          echo "Starting test workflow 1 > job-1 > step-1"
       - name: Goodbye message
         run: echo "Goodbye! Ending workflow"
